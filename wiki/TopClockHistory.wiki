@@ -1,3 +1,4 @@
+#labels TopClock,History
 = TopClock变更履历 =
 == 2007-07-07 ==
 *Bate3更新内容*
