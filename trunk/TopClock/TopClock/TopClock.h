@@ -22,10 +22,6 @@
 #define	INFO_RIGHT				(SCREEN_WIDTH - INFO_X)
 #define	INFO_BOTTOM				(SCREEN_HEIGHT - BAR_HEIGHT * 2)
 
-#if _WIN32_WCE < 0x501
-#define	DEFAULT_COLOR			RGB(0xFF, 0xFF, 0xFF)
-#endif //_WIN32_WCE < 0x501
-
 extern HINSTANCE	g_hInst;
 extern HWND			g_hwndMenuBar;
 

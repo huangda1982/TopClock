@@ -31,29 +31,29 @@ LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 
 1 TEXTINCLUDE 
 BEGIN
-	"resourcesp.h\0"
+    "resourcesp.h\0"
 END
 
 2 TEXTINCLUDE 
 BEGIN
-	"#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
-	"#include ""resdefce.h""\r\n"
-	"#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
-	"\0"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resdefce.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
 END
 
 3 TEXTINCLUDE 
 BEGIN
-	"\r\n"
-	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
-	"LANGUAGE 4, 2\r\n"
-	"#pragma code_page(936)\r\n"
-	"#include ""TopClocksp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
-	"#endif\r\n"
-	"\0"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""TopClocksp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
 END
 
-#endif	  // APSTUDIO_INVOKED
+#endif    // APSTUDIO_INVOKED
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -63,49 +63,22 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDI_TOPCLOCK		  ICON					"TopClock.ico"
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDI_TOPCLOCK$(QVGA)	ICON					"TopClock_QVGA.ico"
-#else
-IDI_TOPCLOCK		  ICON					"TopClock_QVGA.ico"
-#endif
-#endif
+IDI_TOPCLOCK            ICON                    "TopClock.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
 
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDD_TOPCLOCK DIALOG  0, 0, 134, 111
-STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION
-FONT 8, "MS Shell Dlg"
-BEGIN
-	LTEXT			"小时钟 Beta3\n黄达制作\nhuangda1982\n  @gmail.com",IDC_SIGN,45,5,83,35
-	LTEXT			"命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制。\n-color #XXXXXX\t指定颜色值。",IDC_INFO,5,45,120,35,SS_NOPREFIX
-	ICON			IDI_TOPCLOCK,IDC_MYICON,10,7,20,20
-	CONTROL 		IDB_SEAL,IDC_SEAL,"Static",SS_BITMAP,90,100,21,20
-END
-#endif
-
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDD_TOPCLOCK$(QVGA) DIALOG	0, 0, 142, 132
-#else
 IDD_TOPCLOCK DIALOG  0, 0, 142, 132
-#endif
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION
 FONT 8, "MS Shell Dlg"
 BEGIN
-	LTEXT			"小时钟 Beta3\n黄达制作\nhuangda1982@gmail.com",IDC_SIGN,47,5,90,26
-	LTEXT			"命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。",IDC_INFO,5,43,132,41,SS_NOPREFIX
-	ICON			IDI_TOPCLOCK,IDC_MYICON,10,7,20,20
-	CONTROL 		IDB_SEAL,IDC_SEAL,"Static",SS_BITMAP,94,94,43,39
+    LTEXT           "小时钟 V1.0\n黄达制作\nhuangda1982@gmail.com",IDC_SIGN,47,5,90,26
+    LTEXT           "命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。",IDC_INFO,5,41,132,41,SS_NOPREFIX
+    ICON            IDI_TOPCLOCK,IDC_MYICON,10,7,20,20
+    CONTROL         143,IDC_SEAL,"Static",SS_BITMAP,93,86,43,39
 END
-#endif
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -113,162 +86,20 @@ END
 // Bitmap
 //
 
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_SEAL				BITMAP					"bmp\\Seal.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_AM					BITMAP					"bmp\\AM.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_0					BITMAP					"bmp\\bmp0.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_1					BITMAP					"bmp\\bmp1.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_2					BITMAP					"bmp\\bmp2.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_3					BITMAP					"bmp\\bmp3.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_4					BITMAP					"bmp\\bmp4.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_5					BITMAP					"bmp\\bmp5.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_6					BITMAP					"bmp\\bmp6.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_7					BITMAP					"bmp\\bmp7.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_8					BITMAP					"bmp\\bmp8.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_9					BITMAP					"bmp\\bmp9.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_COLON				BITMAP					"bmp\\Colon.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || !defined(QVGA)
-IDB_PM					BITMAP					"bmp\\PM.bmp"
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_SEAL$(QVGA) 		BITMAP					"bmp\\Seal_QVGA.bmp"
-#else
-IDB_SEAL				BITMAP					"bmp\\Seal_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_0$(QVGA)			BITMAP					"bmp\\bmp0_QVGA.bmp"
-#else
-IDB_0					BITMAP					"bmp\\bmp0_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_2$(QVGA)			BITMAP					"bmp\\bmp2_QVGA.bmp"
-#else
-IDB_2					BITMAP					"bmp\\bmp2_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_1$(QVGA)			BITMAP					"bmp\\bmp1_QVGA.bmp"
-#else
-IDB_1					BITMAP					"bmp\\bmp1_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_3$(QVGA)			BITMAP					"bmp\\bmp3_QVGA.bmp"
-#else
-IDB_3					BITMAP					"bmp\\bmp3_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_4$(QVGA)			BITMAP					"bmp\\bmp4_QVGA.bmp"
-#else
-IDB_4					BITMAP					"bmp\\bmp4_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_5$(QVGA)			BITMAP					"bmp\\bmp5_QVGA.bmp"
-#else
-IDB_5					BITMAP					"bmp\\bmp5_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_6$(QVGA)			BITMAP					"bmp\\bmp6_QVGA.bmp"
-#else
-IDB_6					BITMAP					"bmp\\bmp6_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_7$(QVGA)			BITMAP					"bmp\\bmp7_QVGA.bmp"
-#else
-IDB_7					BITMAP					"bmp\\bmp7_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_8$(QVGA)			BITMAP					"bmp\\bmp8_QVGA.bmp"
-#else
-IDB_8					BITMAP					"bmp\\bmp8_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_9$(QVGA)			BITMAP					"bmp\\bmp9_QVGA.bmp"
-#else
-IDB_9					BITMAP					"bmp\\bmp9_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_AM$(QVGA)			BITMAP					"bmp\\AM_QVGA.bmp"
-#else
-IDB_AM					BITMAP					"bmp\\AM_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_COLON$(QVGA)		BITMAP					"bmp\\Colon_QVGA.bmp"
-#else
-IDB_COLON				BITMAP					"bmp\\Colon_QVGA.bmp"
-#endif
-#endif
-#if defined(APSTUDIO_INVOKED) || defined(QVGA)
-#if defined(APSTUDIO_INVOKED)
-IDB_PM$(QVGA)			BITMAP					"bmp\\PM_QVGA.bmp"
-#else
-IDB_PM					BITMAP					"bmp\\PM_QVGA.bmp"
-#endif
-#endif
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// DESIGNINFO
-//
-
-#ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
-BEGIN
-	IDD_TOPCLOCK, DIALOG
-	BEGIN
-		, 48, 69
-	END
-END
-#endif	  // APSTUDIO_INVOKED
-
+IDB_SEAL                BITMAP                  "bmp\\Seal.bmp"
+IDB_AM                  BITMAP                  "bmp\\AM.bmp"
+IDB_0                   BITMAP                  "bmp\\bmp0.bmp"
+IDB_1                   BITMAP                  "bmp\\bmp1.bmp"
+IDB_2                   BITMAP                  "bmp\\bmp2.bmp"
+IDB_3                   BITMAP                  "bmp\\bmp3.bmp"
+IDB_4                   BITMAP                  "bmp\\bmp4.bmp"
+IDB_5                   BITMAP                  "bmp\\bmp5.bmp"
+IDB_6                   BITMAP                  "bmp\\bmp6.bmp"
+IDB_7                   BITMAP                  "bmp\\bmp7.bmp"
+IDB_8                   BITMAP                  "bmp\\bmp8.bmp"
+IDB_9                   BITMAP                  "bmp\\bmp9.bmp"
+IDB_COLON               BITMAP                  "bmp\\Colon.bmp"
+IDB_PM                  BITMAP                  "bmp\\PM.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -277,8 +108,8 @@ END
 
 IDR_MENU MENU 
 BEGIN
-	MENUITEM "隐藏",						  IDM_HIDE
-	MENUITEM "退出",						  IDM_EXIT
+    MENUITEM "隐藏",                          IDM_HIDE
+    MENUITEM "退出",                          IDM_EXIT
 END
 
 
@@ -289,17 +120,17 @@ END
 
 STRINGTABLE 
 BEGIN
-	IDC_TOPCLOCK			"TOPCLOCK"
+    IDC_TOPCLOCK            "TOPCLOCK"
 END
 
 STRINGTABLE 
 BEGIN
-	IDS_APP_TITLE			"小时钟"
-	IDS_EXIT				"退出"
-	IDS_HIDE				"隐藏"
+    IDS_APP_TITLE           "小时钟"
+    IDS_EXIT                "退出"
+    IDS_HIDE                "隐藏"
 END
 
-#endif	  // Chinese (P.R.C.) resources
+#endif    // Chinese (P.R.C.) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -317,6 +148,5 @@ LANGUAGE 4, 2
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-#endif	  // not APSTUDIO_INVOKED
-
+#endif    // not APSTUDIO_INVOKED
 
