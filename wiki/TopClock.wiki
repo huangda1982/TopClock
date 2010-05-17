@@ -1,9 +1,9 @@
 #labels Featured,TopClock
+= TopClock主页 =
 == 简述 ==
 TopClock可以在您的手机屏幕上方显示一个LED效果的小时钟，曾经叫做“状态栏时钟（ClockOnTop）”。她的大小不超过20K，您可以把它放在手机的任何位置而不必担心消耗许多存储空间。您可以通过命令行参数选择12小时制或是24小时制显示，并选择显示的颜色。如果不指定颜色她将自动选择您的手机主题里指定的颜色。
 
 == 变更履历 ==
-前往[http://code.google.com/p/huangda1982/downloads/list?q=label:TopClock TopClock变更履历]
 前往[TopClockHistory TopClock变更履历]
 
 == 下载 ==
