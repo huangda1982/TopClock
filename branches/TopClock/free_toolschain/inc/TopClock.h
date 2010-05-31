@@ -1,9 +1,7 @@
 #ifndef __TOPCLOCK_H__
 #define __TOPCLOCK_H__
 
-#include "..\res\resourcesp.h"
-#include "..\res\resource.h"
-#include "..\res\resource_QVGA.h"
+#include "../res/resource.h"
 
 #define IsSpace iswspace
 #define StrLen	wcslen

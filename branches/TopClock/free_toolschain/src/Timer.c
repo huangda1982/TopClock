@@ -1,12 +1,9 @@
-#if _WIN32_WCE >= 0x501
-#include <Regext.h>
-#else //_WIN32_WCE >= 0x501
-#include <Windows.h>
-#endif //_WIN32_WCE >= 0x501
+#include <regext.h>
+#include <windows.h>
 
-#include "..\inc\Timer.h"
+#include "../inc/Timer.h"
 
-#include "..\inc\Clock.h"
+#include "../inc/Clock.h"
 
 #if _WIN32_WCE >= 0x501
 static HREGNOTIFY	s_hNotify = {0};
