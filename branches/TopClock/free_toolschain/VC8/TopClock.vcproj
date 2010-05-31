@@ -20,8 +20,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Smartphone 2003 (ARMV4)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -102,8 +102,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -183,8 +183,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Smartphone 2003 (ARMV4)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -265,8 +265,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -346,8 +346,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug_QVGA|Smartphone 2003 (ARMV4)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -426,8 +426,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug_QVGA|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -509,8 +509,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_QVGA|Smartphone 2003 (ARMV4)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -590,8 +590,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_QVGA|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="..\Output"
-			IntermediateDirectory="..\Output"
+			OutputDirectory="..\out"
+			IntermediateDirectory="..\out"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -678,193 +678,205 @@
 	</References>
 	<Files>
 		<Filter
-			Name="源文件"
+			Name="src"
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\Clock.c"
+				RelativePath="..\src\Clock.c"
 				>
 			</File>
 			<File
-				RelativePath="..\Timer.c"
+				RelativePath="..\src\Timer.c"
 				>
 			</File>
 			<File
-				RelativePath="..\TopClock.c"
+				RelativePath="..\src\TopClock.c"
 				>
 			</File>
 		</Filter>
 		<Filter
-			Name="头文件"
+			Name="inc"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\Clock.h"
+				RelativePath="..\inc\Clock.h"
 				>
 			</File>
 			<File
-				RelativePath="..\resourcesp.h"
+				RelativePath="..\inc\Timer.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Timer.h"
-				>
-			</File>
-			<File
-				RelativePath="..\TopClock.h"
+				RelativePath="..\inc\TopClock.h"
 				>
 			</File>
 		</Filter>
 		<Filter
-			Name="资源文件"
+			Name="res"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath="..\TopClock.ico"
+				RelativePath="..\res\resource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\TopClock_QVGA.ico"
+				RelativePath="..\res\resource_QVGA.h"
 				>
 			</File>
 			<File
-				RelativePath="..\TopClocksp.rc"
+				RelativePath="..\res\resourcesp.h"
 				>
 			</File>
 			<File
-				RelativePath="..\TopClocksp.rc2"
+				RelativePath="..\res\TopClock.rc"
+				>
+			</File>
+			<File
+				RelativePath="..\res\TopClock_QVGA.rc"
+				>
+			</File>
+			<File
+				RelativePath="..\res\TopClocksp.rc"
+				>
+			</File>
+			<File
+				RelativePath="..\res\TopClocksp.rc2"
 				>
 			</File>
 			<Filter
 				Name="bmp"
 				>
 				<File
-					RelativePath="..\bmp\AM.bmp"
+					RelativePath="..\res\bmp\AM.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp0.bmp"
+					RelativePath="..\res\bmp\AM_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp1.bmp"
+					RelativePath="..\res\bmp\bmp0.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp2.bmp"
+					RelativePath="..\res\bmp\bmp0_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp3.bmp"
+					RelativePath="..\res\bmp\bmp1.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp4.bmp"
+					RelativePath="..\res\bmp\bmp1_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp5.bmp"
+					RelativePath="..\res\bmp\bmp2.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp6.bmp"
+					RelativePath="..\res\bmp\bmp2_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp7.bmp"
+					RelativePath="..\res\bmp\bmp3.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp8.bmp"
+					RelativePath="..\res\bmp\bmp3_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\bmp9.bmp"
+					RelativePath="..\res\bmp\bmp4.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\Colon.bmp"
+					RelativePath="..\res\bmp\bmp4_QVGA.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\PM.bmp"
+					RelativePath="..\res\bmp\bmp5.bmp"
 					>
 				</File>
 				<File
-					RelativePath="..\bmp\Seal.bmp"
+					RelativePath="..\res\bmp\bmp5_QVGA.bmp"
 					>
 				</File>
-				<Filter
-					Name="QVGA"
+				<File
+					RelativePath="..\res\bmp\bmp6.bmp"
 					>
-					<File
-						RelativePath="..\bmp\AM_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp0_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp1_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp2_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp3_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp4_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp5_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp6_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp7_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp8_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\bmp9_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\Colon_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\PM_QVGA.bmp"
-						>
-					</File>
-					<File
-						RelativePath="..\bmp\Seal_QVGA.bmp"
-						>
-					</File>
-				</Filter>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp6_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp7.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp7_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp8.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp8_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp9.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\bmp9_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\Colon.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\Colon_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\PM.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\PM_QVGA.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\Seal.bmp"
+					>
+				</File>
+				<File
+					RelativePath="..\res\bmp\Seal_QVGA.bmp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="ico"
+				>
+				<File
+					RelativePath="..\res\ico\TopClock.ico"
+					>
+				</File>
+				<File
+					RelativePath="..\res\ico\TopClock_QVGA.ico"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<File
 			RelativePath=".\Clean.bat"
-			>
-		</File>
-		<File
-			RelativePath=".\ReadMe.txt"
 			>
 		</File>
 	</Files>

@@ -4,9 +4,9 @@
 #include <Windows.h>
 #endif //_WIN32_WCE >= 0x501
 
-#include "Timer.h"
+#include "..\inc\Timer.h"
 
-#include "Clock.h"
+#include "..\inc\Clock.h"
 
 #if _WIN32_WCE >= 0x501
 static HREGNOTIFY	s_hNotify = {0};

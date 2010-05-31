@@ -5,9 +5,9 @@
 #include <Windows.h>
 #include <AygShell.h>
 
-#include "TopClock.h"
-#include "Clock.h"
-#include "Timer.h"
+#include "..\inc\TopClock.h"
+#include "..\inc\Clock.h"
+#include "..\inc\Timer.h"
 
 #define MAX_LOADSTRING 256
 
@@ -207,7 +207,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 		return 0;
 	} 
 
-	hWnd = CreateDialog(g_hInst, MAKEINTRESOURCE(IDD_TOPCLOCK), NULL, DialogProc);
+	hWnd = CreateDialog(g_hInst, MAKEINTRESOURCE(RES_IDD_TOPCLOCK), NULL, DialogProc);
 
 	if (!hWnd)
 	{

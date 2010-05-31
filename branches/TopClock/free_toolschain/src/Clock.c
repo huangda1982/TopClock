@@ -1,7 +1,7 @@
 #include <Windows.h>
-#include "TopClock.h"
+#include "..\inc\TopClock.h"
 
-#include "Clock.h"
+#include "..\inc\Clock.h"
 
 static COLORREF	s_color = 0;
 static HICON	s_hHourIcon = NULL;
