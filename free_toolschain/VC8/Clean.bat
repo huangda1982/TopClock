@@ -1,8 +1,8 @@
 del *.ncb
 del *.suo /a:H
 
-del "../Output\*.*" /q
+del "..\out\*.*" /q
 
 del "*.user"
 
-del "*.aps"
+del "..\res\*.aps"
