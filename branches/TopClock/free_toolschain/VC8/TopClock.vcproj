@@ -20,8 +20,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Smartphone 2003 (ARMV4)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -89,7 +89,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -102,8 +102,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -170,7 +170,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -183,8 +183,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Smartphone 2003 (ARMV4)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -252,7 +252,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -265,8 +265,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -333,7 +333,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -346,8 +346,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug_QVGA|Smartphone 2003 (ARMV4)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -413,7 +413,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -426,8 +426,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug_QVGA|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -496,7 +496,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -509,8 +509,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_QVGA|Smartphone 2003 (ARMV4)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -577,7 +577,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -590,8 +590,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_QVGA|Windows Mobile 5.0 Smartphone SDK (ARMV4I)"
-			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="..\Output"
+			IntermediateDirectory="..\Output"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -662,7 +662,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Output\&quot;"
+				CommandLine=""
 			/>
 			<DeploymentTool
 				ForceDirty="-1"
@@ -683,15 +683,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\Clock.c"
+				RelativePath="..\Clock.c"
 				>
 			</File>
 			<File
-				RelativePath=".\Timer.c"
+				RelativePath="..\Timer.c"
 				>
 			</File>
 			<File
-				RelativePath=".\TopClock.c"
+				RelativePath="..\TopClock.c"
 				>
 			</File>
 		</Filter>
@@ -701,19 +701,19 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\Clock.h"
+				RelativePath="..\Clock.h"
 				>
 			</File>
 			<File
-				RelativePath=".\resourcesp.h"
+				RelativePath="..\resourcesp.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Timer.h"
+				RelativePath="..\Timer.h"
 				>
 			</File>
 			<File
-				RelativePath=".\TopClock.h"
+				RelativePath="..\TopClock.h"
 				>
 			</File>
 		</Filter>
@@ -723,144 +723,144 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\TopClock.ico"
+				RelativePath="..\TopClock.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\TopClock_QVGA.ico"
+				RelativePath="..\TopClock_QVGA.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\TopClocksp.rc"
+				RelativePath="..\TopClocksp.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\TopClocksp.rc2"
+				RelativePath="..\TopClocksp.rc2"
 				>
 			</File>
 			<Filter
 				Name="bmp"
 				>
 				<File
-					RelativePath=".\bmp\AM.bmp"
+					RelativePath="..\bmp\AM.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp0.bmp"
+					RelativePath="..\bmp\bmp0.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp1.bmp"
+					RelativePath="..\bmp\bmp1.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp2.bmp"
+					RelativePath="..\bmp\bmp2.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp3.bmp"
+					RelativePath="..\bmp\bmp3.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp4.bmp"
+					RelativePath="..\bmp\bmp4.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp5.bmp"
+					RelativePath="..\bmp\bmp5.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp6.bmp"
+					RelativePath="..\bmp\bmp6.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp7.bmp"
+					RelativePath="..\bmp\bmp7.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp8.bmp"
+					RelativePath="..\bmp\bmp8.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\bmp9.bmp"
+					RelativePath="..\bmp\bmp9.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\Colon.bmp"
+					RelativePath="..\bmp\Colon.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\PM.bmp"
+					RelativePath="..\bmp\PM.bmp"
 					>
 				</File>
 				<File
-					RelativePath=".\bmp\Seal.bmp"
+					RelativePath="..\bmp\Seal.bmp"
 					>
 				</File>
 				<Filter
 					Name="QVGA"
 					>
 					<File
-						RelativePath=".\bmp\AM_QVGA.bmp"
+						RelativePath="..\bmp\AM_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp0_QVGA.bmp"
+						RelativePath="..\bmp\bmp0_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp1_QVGA.bmp"
+						RelativePath="..\bmp\bmp1_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp2_QVGA.bmp"
+						RelativePath="..\bmp\bmp2_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp3_QVGA.bmp"
+						RelativePath="..\bmp\bmp3_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp4_QVGA.bmp"
+						RelativePath="..\bmp\bmp4_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp5_QVGA.bmp"
+						RelativePath="..\bmp\bmp5_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp6_QVGA.bmp"
+						RelativePath="..\bmp\bmp6_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp7_QVGA.bmp"
+						RelativePath="..\bmp\bmp7_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp8_QVGA.bmp"
+						RelativePath="..\bmp\bmp8_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\bmp9_QVGA.bmp"
+						RelativePath="..\bmp\bmp9_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\Colon_QVGA.bmp"
+						RelativePath="..\bmp\Colon_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\PM_QVGA.bmp"
+						RelativePath="..\bmp\PM_QVGA.bmp"
 						>
 					</File>
 					<File
-						RelativePath=".\bmp\Seal_QVGA.bmp"
+						RelativePath="..\bmp\Seal_QVGA.bmp"
 						>
 					</File>
 				</Filter>
 			</Filter>
 		</Filter>
 		<File
-			RelativePath="..\Clean.bat"
+			RelativePath=".\Clean.bat"
 			>
 		</File>
 		<File
