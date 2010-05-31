@@ -22,6 +22,32 @@
 #define ICON_WIDTH				BAR_HEIGHT
 #define ICON_HEIGHT				ICON_WIDTH
 
+#ifndef QVGA
+#define SCREEN_WIDTH		176
+#define SCREEN_HEIGHT		220
+#define BAR_HEIGHT			16
+
+#define DIGIT1_X            3
+#define DIGIT1_Y            2
+
+#define DIGIT2_X            10
+#define DIGIT2_Y            DIGIT1_Y
+
+#define DIGIT_WIDTH         6
+#define DIGIT_HEIGHT        13
+
+#define AM_PM_X             0
+#define AM_PM_Y             DIGIT1_Y
+
+#define AM_PM_WIDTH         6
+#define AM_PM_HEIGHT        13
+
+#define COLON_X             0
+#define COLON_Y             (DIGIT1_Y + (DIGIT_HEIGHT - COLON_HEIGHT) / 2)
+
+#define COLON_WIDTH         2
+#define COLON_HEIGHT        7
+#else //QVGA
 #define SCREEN_WIDTH		240
 #define SCREEN_HEIGHT		320
 #define BAR_HEIGHT			22
@@ -46,6 +72,7 @@
 
 #define COLON_WIDTH         2
 #define COLON_HEIGHT        7
+#endif //QVGA
 
 void	SetClockColor(COLORREF color);
 #define	CreateClock(hWnd)	UpdateClock(hWnd)

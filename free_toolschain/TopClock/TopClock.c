@@ -18,6 +18,7 @@ BOOL		g_b12H = FALSE;
 BOOL		g_bHide = FALSE;
 BOOL		g_bColor = FALSE;
 
+#if _WIN32_WCE >= 0x501
 static COLORREF GetTrayTextColor()
 {
 	BYTE		themeValues[COLOR_TRAYTEXT_SIZE] = {0};
@@ -32,6 +33,7 @@ static COLORREF GetTrayTextColor()
 	
 	return color;
 }
+#endif //_WIN32_WCE >= 0x501
 
 static void DoCommandLine(LPTSTR lpCmdLine)
 {
@@ -113,6 +115,7 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 		}
 		break;
 
+#if _WIN32_WCE >= 0x501
 	case WM_SYSCOLORCHANGE:
 		if(!g_bColor)
 		{
@@ -120,6 +123,7 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 			UpdateClock(hwndDlg);
 		}
 		break;
+#endif //_WIN32_WCE >= 0x501
 
 	case WM_INITDIALOG:
 		sid.dwMask = SHIDIM_FLAGS;
@@ -145,7 +149,11 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 
 		if(!g_bColor)
 		{
+#if _WIN32_WCE >= 0x501
 			SetClockColor(GetTrayTextColor());
+#else //_WIN32_WCE >= 0x501
+			SetClockColor(DEFAULT_COLOR);
+#endif //_WIN32_WCE >= 0x501
 		}
 
 		CreateClock(hwndDlg);
