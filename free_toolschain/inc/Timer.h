@@ -13,3 +13,4 @@ void	CreateTimer(HWND hWnd);
 void	DestroyTimer(HWND hWnd);
 
 #endif //__TIMER_H__
+

@@ -1,4 +1,4 @@
-#include <regext.h>
+//#include <regext.h>
 #include <windows.h>
 
 #include "../inc/Timer.h"

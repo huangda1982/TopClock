@@ -1,9 +1,6 @@
-// TopClock.cpp : 定义应用程序的入口点。
-
-#pragma comment(lib, "aygshell.lib") 
-
-#include <Windows.h>
-#include <AygShell.h>
+#include <windows.h>
+#include <commctrl.h>
+#include <aygShell.h>
 
 #include "..\inc\TopClock.h"
 #include "..\inc\Clock.h"
@@ -37,28 +34,22 @@ static COLORREF GetTrayTextColor()
 
 static void DoCommandLine(LPTSTR lpCmdLine)
 {
-	int			nIndex1 = 0, nIndex2 = 0;
+	int			argc = 0;
+	LPTSTR		*argv = NULL;
+	
 	int			nR = 0, nG = 0, nB = 0;
 	BOOL		bColor = FALSE;
 	COLORREF	color = 0;
-	TCHAR		acArg[MAX_LOADSTRING] = {0};
+	int i;
 
-	do
-	{
-		if(lpCmdLine[nIndex1] && !IsSpace(lpCmdLine[nIndex1]))
+	if (argv = CommandLineToArgv(lpCmdLine, &argc)) {
+		for(i=0; i < argc; i++)
 		{
-			acArg[nIndex2++] = lpCmdLine[nIndex1];
-		}
-		else
-		{
-			acArg[nIndex2] = '\0';
-			nIndex2 = 0;
-
 			if(bColor)
 			{
-				if(acArg[0] == ARG_COLOR_HEAD)
+				if(argv[i][0] == ARG_COLOR_HEAD)
 				{
-					SScanF(acArg, TEXT("#%2x%2x%2x"), &nR, &nG, &nB);
+					SScanF(argv[i], ARG_COLOR_FORMAT, &nR, &nG, &nB);
 					SetClockColor(RGB(nR, nG, nB));
 					g_bColor = TRUE;
 				}
@@ -66,23 +57,25 @@ static void DoCommandLine(LPTSTR lpCmdLine)
 			}
 			else
 			{
-				if(!StrCmp(StrLwr(acArg), ARG_12H))
+				if(!StrCmp(StrLwr(argv[i]), ARG_12H))
 				{
 					g_b12H = TRUE;
 				}
 
-				if(!StrCmp(StrLwr(acArg), ARG_HIDE))
+				if(!StrCmp(StrLwr(argv[i]), ARG_HIDE))
 				{
 					g_bHide = TRUE;
 				}
 
-				if(!StrCmp(StrLwr(acArg), ARG_COLOR))
+				if(!StrCmp(StrLwr(argv[i]), ARG_COLOR))
 				{
 					bColor = TRUE;
 				}
 			}
 		}
-	}while(lpCmdLine[nIndex1++]);
+
+		LocalFree(argv);
+	}
 }
 
 static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -207,7 +200,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 		return 0;
 	} 
 
-	hWnd = CreateDialog(g_hInst, MAKEINTRESOURCE(RES_IDD_TOPCLOCK), NULL, DialogProc);
+	hWnd = CreateDialog(g_hInst, MAKEINTRESOURCE(IDD_TOPCLOCK), NULL, DialogProc);
 
 	if (!hWnd)
 	{
