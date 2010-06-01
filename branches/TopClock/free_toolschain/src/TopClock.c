@@ -1,10 +1,10 @@
 #include <windows.h>
 #include <commctrl.h>
-#include <aygShell.h>
+#include <aygshell.h>
 
-#include "..\inc\TopClock.h"
-#include "..\inc\Clock.h"
-#include "..\inc\Timer.h"
+#include "../inc/TopClock.h"
+#include "../inc/Clock.h"
+#include "../inc/Timer.h"
 
 #define MAX_LOADSTRING 256
 
@@ -34,6 +34,7 @@ static COLORREF GetTrayTextColor()
 
 static void DoCommandLine(LPTSTR lpCmdLine)
 {
+#if 0
 	int			argc = 0;
 	LPTSTR		*argv = NULL;
 	
@@ -76,6 +77,7 @@ static void DoCommandLine(LPTSTR lpCmdLine)
 
 		LocalFree(argv);
 	}
+#endif
 }
 
 static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)

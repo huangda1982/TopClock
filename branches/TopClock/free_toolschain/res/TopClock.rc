@@ -7,65 +7,51 @@
 #include <richedit.h>
 #include "resource.h"
 
-
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 
 
 //
 // Bitmap resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_0              BITMAP         "bmp/bmp0.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_1              BITMAP         "bmp/bmp1.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_2              BITMAP         "bmp/bmp2.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_3              BITMAP         "bmp/bmp3.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_4              BITMAP         "bmp/bmp4.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_5              BITMAP         "bmp/bmp5.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_6              BITMAP         "bmp/bmp6.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_7              BITMAP         "bmp/bmp7.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_8              BITMAP         "bmp/bmp8.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_9              BITMAP         "bmp/bmp1.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_AM             BITMAP         "bmp/AM.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_COLON          BITMAP         "bmp/Colon.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_PM             BITMAP         "bmp/PM.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_SEAL           BITMAP         "bmp/Seal.bmp"
 
 
@@ -73,11 +59,10 @@ IDB_SEAL           BITMAP         "bmp/Seal.bmp"
 //
 // Menu resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDR_MENU MENU
 {
-    MENUITEM "ÈöêËóè", IDM_HIDE
-    MENUITEM "ÈÄÄÂá∫", IDM_EXIT
+    MENUITEM "“˛≤ÿ", IDM_HIDE
+    MENUITEM "ÕÀ≥ˆ", IDM_EXIT
 }
 
 
@@ -85,13 +70,12 @@ IDR_MENU MENU
 //
 // Dialog resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDD_TOPCLOCK DIALOG 0, 0, 150, 166
 STYLE DS_CENTER | DS_SHELLFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
 FONT 8, "MS Shell Dlg"
 {
-    LTEXT           "Â∞èÊó∂Èíü V1.0\nhttp://huangda1982.googlecode.com", IDC_SIGN, 47, 5, 90, 26, SS_LEFT
-    LTEXT           "ÂëΩ‰ª§Ë°åÂèÇÊï∞Ôºö\n-hide\t\t‰∏çÊòæÁ§∫Á™óÂè£„ÄÇ\n-12\t\tÂçÅ‰∫åÂ∞èÊó∂Âà∂ÊòæÁ§∫„ÄÇ\n-color #XXXXXX\tÊåáÂÆöÈ¢úËâ≤ÂÄº„ÄÇ", IDC_INFO, 5, 43, 132, 41, SS_LEFT | SS_NOPREFIX
+    LTEXT           "–° ±÷” V1.0\nhttp://huangda1982.googlecode.com", IDC_SIGN, 47, 5, 90, 26, SS_LEFT
+    LTEXT           "√¸¡Ó––≤Œ ˝£∫\n-hide\t\t≤ªœ‘ æ¥∞ø⁄°£\n-12\t\t Æ∂˛–° ±÷∆œ‘ æ°£\n-color #XXXXXX\t÷∏∂®—’…´÷µ°£", IDC_INFO, 5, 43, 132, 41, SS_LEFT | SS_NOPREFIX
     CONTROL         IDB_SEAL, IDC_SEAL, WC_STATIC, SS_BITMAP, 0, 0, 43, 43
 }
 
@@ -100,11 +84,12 @@ FONT 8, "MS Shell Dlg"
 //
 // String Table resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 STRINGTABLE
 {
     IDC_TOPCLOCK                  "TOPCLOCK"
-    IDS_APP_TITLE                 "Â∞èÊó∂Èíü"
+    IDS_APP_TITLE                 "–° ±÷”"
+    IDS_HIDE                      "“˛≤ÿ"
+    IDS_EXIT                      "ÕÀ≥ˆ"
 }
 
 
@@ -112,5 +97,18 @@ STRINGTABLE
 //
 // Icon resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDI_TOPCLOCK       ICON           "ico/TopClock.ico"
+
+//HI_RES_AWARE CEUX {1}
+
+//IDR_MENU SHMENUBAR DISCARDABLE 
+//BEGIN
+//    IDR_MENU, 
+//    2,
+//
+//	I_IMAGENONE, IDM_HIDE, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE, 
+//	IDS_HIDE, 0, NOMENU,
+//
+//    I_IMAGENONE, IDM_EXIT, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE, 
+//    IDS_EXIT, 0, NOMENU,
+//END
