@@ -4,111 +4,114 @@
 
 #include <windows.h>
 #include <commctrl.h>
-#include <richedit.h>
 #include "resource.h"
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
 
 
 //
 // Bitmap resources
 //
-IDB_0              BITMAP         "bmp/bmp0.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_0              BITMAP         "./bmp/bmp0.bmp"
 
 
-IDB_1              BITMAP         "bmp/bmp1.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_1              BITMAP         "./bmp/bmp1.bmp"
 
 
-IDB_2              BITMAP         "bmp/bmp2.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_2              BITMAP         "./bmp/bmp2.bmp"
 
 
-IDB_3              BITMAP         "bmp/bmp3.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_3              BITMAP         "./bmp/bmp3.bmp"
 
 
-IDB_4              BITMAP         "bmp/bmp4.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_4              BITMAP         "./bmp/bmp4.bmp"
 
 
-IDB_5              BITMAP         "bmp/bmp5.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_5              BITMAP         "./bmp/bmp5.bmp"
 
 
-IDB_6              BITMAP         "bmp/bmp6.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_6              BITMAP         "./bmp/bmp6.bmp"
 
 
-IDB_7              BITMAP         "bmp/bmp7.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_7              BITMAP         "./bmp/bmp7.bmp"
 
 
-IDB_8              BITMAP         "bmp/bmp8.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_8              BITMAP         "./bmp/bmp8.bmp"
 
 
-IDB_9              BITMAP         "bmp/bmp1.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_9              BITMAP         "./bmp/bmp9.bmp"
 
 
-IDB_AM             BITMAP         "bmp/AM.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_AM             BITMAP         "./bmp/AM.bmp"
 
 
-IDB_COLON          BITMAP         "bmp/Colon.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_COLON          BITMAP         "./bmp/Colon.bmp"
 
 
-IDB_PM             BITMAP         "bmp/PM.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_PM             BITMAP         "./bmp/PM.bmp"
 
 
-IDB_SEAL           BITMAP         "bmp/Seal.bmp"
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDB_STAMP          BITMAP         "./bmp/Stamp.bmp"
 
 
 
 //
 // Menu resources
 //
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDR_MENU MENU
-{
+BEGIN
     MENUITEM "隐藏", IDM_HIDE
     MENUITEM "退出", IDM_EXIT
-}
+END
 
 
 
 //
 // Dialog resources
 //
-IDD_TOPCLOCK DIALOG 0, 0, 150, 166
-STYLE DS_CENTER | DS_SHELLFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
-FONT 8, "MS Shell Dlg"
-{
-    LTEXT           "小时钟 V1.0\nhttp://huangda1982.googlecode.com", IDC_SIGN, 47, 5, 90, 26, SS_LEFT
-    LTEXT           "命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。", IDC_INFO, 5, 43, 132, 41, SS_LEFT | SS_NOPREFIX
-    CONTROL         IDB_SEAL, IDC_SEAL, WC_STATIC, SS_BITMAP, 0, 0, 43, 43
-}
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDD_TOPCLOCK DIALOG 0, 0, 190, 136
+STYLE DS_SETFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
+CAPTION "小时钟"
+FONT 8, "Ms Shell Dlg"
+BEGIN
+    LTEXT           "", IDC_VER, 6, 6, 1, 8, SS_LEFT
+    LTEXT           "小时钟 V%s\n\n命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。\n\nhuangda1982.googlecode.com", IDC_INFO, 5, 5, 143, 64, SS_LEFT
+    CONTROL         IDB_STAMP, IDC_STATIC, WC_STATIC, SS_BITMAP, 130, 26, 43, 43
+END
 
 
 
 //
 // String Table resources
 //
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 STRINGTABLE
-{
-    IDC_TOPCLOCK                  "TOPCLOCK"
-    IDS_APP_TITLE                 "小时钟"
+BEGIN
     IDS_HIDE                      "隐藏"
     IDS_EXIT                      "退出"
-}
+    IDS_APP_TITLE                 "小时钟"
+END
 
 
 
 //
 // Icon resources
 //
-IDI_TOPCLOCK       ICON           "ico/TopClock.ico"
-
-//HI_RES_AWARE CEUX {1}
-
-//IDR_MENU SHMENUBAR DISCARDABLE 
-//BEGIN
-//    IDR_MENU, 
-//    2,
-//
-//	I_IMAGENONE, IDM_HIDE, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE, 
-//	IDS_HIDE, 0, NOMENU,
-//
-//    I_IMAGENONE, IDM_EXIT, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE, 
-//    IDS_EXIT, 0, NOMENU,
-//END
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+IDI_ICON           ICON           "./ico/TopClock.ico"

@@ -131,10 +131,11 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 		}
 
 		memset(&mbi, 0, sizeof(SHMENUBARINFO));
-		mbi.cbSize	   = sizeof(SHMENUBARINFO);
+		mbi.cbSize = sizeof(SHMENUBARINFO);
 		mbi.hwndParent = hwndDlg;
 		mbi.nToolBarId = IDR_MENU;
-		mbi.hInstRes   = g_hInst;
+		mbi.hInstRes = g_hInst;
+		mbi.dwFlags = SHCMBF_COLORBK | SHCMBF_HMENU | SHCMBF_HIDESIPBUTTON;
 
 		if (SHCreateMenuBar(&mbi)) 
 		{
