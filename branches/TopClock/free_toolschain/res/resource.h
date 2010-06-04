@@ -21,8 +21,5 @@
 #define IDM_HIDE                                301
 #define IDM_EXIT                                302
 #define IDD_TOPCLOCK                            400
-#define IDC_VER                                 1000
-#define IDC_INFO                                1002
-#define IDS_HIDE                                40000
-#define IDS_EXIT                                40001
-#define IDS_APP_TITLE                           40002
+#define IDC_INFO                                401
+#define IDS_APP_TITLE                           40000
