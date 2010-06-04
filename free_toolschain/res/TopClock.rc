@@ -12,59 +12,45 @@
 //
 // Bitmap resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_0              BITMAP         "./bmp/bmp0.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_1              BITMAP         "./bmp/bmp1.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_2              BITMAP         "./bmp/bmp2.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_3              BITMAP         "./bmp/bmp3.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_4              BITMAP         "./bmp/bmp4.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_5              BITMAP         "./bmp/bmp5.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_6              BITMAP         "./bmp/bmp6.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_7              BITMAP         "./bmp/bmp7.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_8              BITMAP         "./bmp/bmp8.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_9              BITMAP         "./bmp/bmp9.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_AM             BITMAP         "./bmp/AM.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_COLON          BITMAP         "./bmp/Colon.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_PM             BITMAP         "./bmp/PM.bmp"
 
 
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDB_STAMP          BITMAP         "./bmp/Stamp.bmp"
 
 
@@ -72,46 +58,39 @@ IDB_STAMP          BITMAP         "./bmp/Stamp.bmp"
 //
 // Menu resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDR_MENU MENU
-BEGIN
+{
     MENUITEM "隐藏", IDM_HIDE
     MENUITEM "退出", IDM_EXIT
-END
+}
 
 
 
 //
 // Dialog resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDD_TOPCLOCK DIALOG 0, 0, 190, 136
 STYLE DS_SETFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
 CAPTION "小时钟"
 FONT 8, "Ms Shell Dlg"
-BEGIN
-    LTEXT           "", IDC_VER, 6, 6, 1, 8, SS_LEFT
+{
     LTEXT           "小时钟 V%s\n\n命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。\n\nhuangda1982.googlecode.com", IDC_INFO, 5, 5, 143, 64, SS_LEFT
-    CONTROL         IDB_STAMP, IDC_STATIC, WC_STATIC, SS_BITMAP, 130, 26, 43, 43
-END
+    CONTROL         IDB_STAMP, IDC_STATIC, WC_STATIC, SS_BITMAP, 5, 80, 43, 39
+}
 
 
 
 //
 // String Table resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 STRINGTABLE
-BEGIN
-    IDS_HIDE                      "隐藏"
-    IDS_EXIT                      "退出"
+{
     IDS_APP_TITLE                 "小时钟"
-END
+}
 
 
 
 //
 // Icon resources
 //
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 IDI_ICON           ICON           "./ico/TopClock.ico"
