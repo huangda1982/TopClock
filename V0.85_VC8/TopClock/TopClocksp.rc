@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourcesp.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resdefce.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourcesp.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resdefce.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""TopClocksp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TOPCLOCK            ICON                    "TopClock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TOPCLOCK DIALOG  0, 0, 142, 132
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "小时钟 V0.85\n黄达制作\nhuangda1982@gmail.com",IDC_SIGN,47,5,90,26
+    LTEXT           "命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。",IDC_INFO,5,41,132,41,SS_NOPREFIX
+    ICON            IDI_TOPCLOCK,IDC_MYICON,10,7,20,20
+    CONTROL         143,IDC_SEAL,"Static",SS_BITMAP,93,86,43,39
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SEAL                BITMAP                  "bmp\\Seal.bmp"
+IDB_AM                  BITMAP                  "bmp\\AM.bmp"
+IDB_0                   BITMAP                  "bmp\\bmp0.bmp"
+IDB_1                   BITMAP                  "bmp\\bmp1.bmp"
+IDB_2                   BITMAP                  "bmp\\bmp2.bmp"
+IDB_3                   BITMAP                  "bmp\\bmp3.bmp"
+IDB_4                   BITMAP                  "bmp\\bmp4.bmp"
+IDB_5                   BITMAP                  "bmp\\bmp5.bmp"
+IDB_6                   BITMAP                  "bmp\\bmp6.bmp"
+IDB_7                   BITMAP                  "bmp\\bmp7.bmp"
+IDB_8                   BITMAP                  "bmp\\bmp8.bmp"
+IDB_9                   BITMAP                  "bmp\\bmp9.bmp"
+IDB_COLON               BITMAP                  "bmp\\Colon.bmp"
+IDB_PM                  BITMAP                  "bmp\\PM.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    MENUITEM "隐藏",                          IDM_HIDE
+    MENUITEM "退出",                          IDM_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_TOPCLOCK            "TOPCLOCK"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "小时钟"
+    IDS_EXIT                "退出"
+    IDS_HIDE                "隐藏"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "TopClocksp.rc2"  // non-Microsoft Visual C++ edited resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
