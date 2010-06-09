@@ -5,11 +5,14 @@
 
 #include "../res/resource.h"
 
+#define VER	TEXT("1.0")
+
 #define	IsSpace iswspace
 #define	StrLen	wcslen
 #define	StrCpy	wcscpy
 #define	StrCmp	wcscmp
 #define	StrLwr	wcslwr
+#define	SPrintF	swprintf
 #define	SScanF	swscanf
 
 #define	DIALOG_CLASS		TEXT("Dialog")
