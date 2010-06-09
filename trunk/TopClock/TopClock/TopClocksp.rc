@@ -74,7 +74,7 @@ IDD_TOPCLOCK DIALOG  0, 0, 142, 132
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT           "小时钟 V1.0\n黄达制作\nhuangda1982@gmail.com",IDC_SIGN,47,5,90,26
+    LTEXT           "小时钟 V0.85\n黄达制作\nhuangda1982@gmail.com",IDC_SIGN,47,5,90,26
     LTEXT           "命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。",IDC_INFO,5,41,132,41,SS_NOPREFIX
     ICON            IDI_TOPCLOCK,IDC_MYICON,10,7,20,20
     CONTROL         143,IDC_SEAL,"Static",SS_BITMAP,93,86,43,39
