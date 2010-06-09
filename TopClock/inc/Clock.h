@@ -53,3 +53,5 @@ void	UpdateClock(HWND hWnd);
 void	DestroyClock(HWND hWnd);
 
 #endif //__CLOCK_H__
+
+
