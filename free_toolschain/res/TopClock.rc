@@ -69,13 +69,16 @@ IDR_MENU MENU
 //
 // Dialog resources
 //
-IDD_TOPCLOCK DIALOG 0, 0, 190, 136
-STYLE DS_SETFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
+IDD_TOPCLOCK DIALOG 0, 0, 155, 170
+STYLE DS_SHELLFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
 CAPTION "小时钟"
-FONT 8, "Ms Shell Dlg"
+FONT 9, "Ms Shell Dlg"
 {
-    LTEXT           "小时钟 V%s\n\n命令行参数：\n-hide\t\t不显示窗口。\n-12\t\t十二小时制显示。\n-color #XXXXXX\t指定颜色值。\n\nhuangda1982.googlecode.com", IDC_INFO, 5, 5, 143, 64, SS_LEFT
-    CONTROL         IDB_STAMP, IDC_STATIC, WC_STATIC, SS_BITMAP, 5, 80, 43, 39
+    LTEXT           "小时钟 V%s\n  黄达制作\nhuangda1982@gmail.com", IDC_SIGN, 30, 5, 90, 24, SS_LEFT
+    LTEXT           "命令行参数：\n-hide\t不显示窗口。\n-12\t十二小时制显示。\n-color #XXXXXX\n\t指定颜色值。", IDC_INFO, 3, 33, 97, 43, SS_LEFT | SS_NOPREFIX
+    LTEXT           "本软件\n     以GPL协议发布。", IDC_GPL, 3, 78, 72, 20, SS_LEFT | SS_NOPREFIX
+    ICON            IDI_ICON, IDC_MYICON, 3, 5, 21, 20, SS_ICON | 0x00000800
+    CONTROL         IDB_STAMP, IDB_STAMP, WC_STATIC, SS_BITMAP | 0x00000800, 84, 84, 7, 6
 }
 
 

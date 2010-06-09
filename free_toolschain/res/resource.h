@@ -21,5 +21,8 @@
 #define IDM_HIDE                                301
 #define IDM_EXIT                                302
 #define IDD_TOPCLOCK                            400
-#define IDC_INFO                                401
+#define IDC_MYICON                              401
+#define IDC_SIGN                                402
+#define IDC_INFO                                403
+#define IDC_GPL                                 404
 #define IDS_APP_TITLE                           40000
