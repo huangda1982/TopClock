@@ -15,7 +15,6 @@ BOOL		g_b12H = FALSE;
 BOOL		g_bHide = FALSE;
 BOOL		g_bColor = FALSE;
 
-#if _WIN32_WCE >= 0x501
 static COLORREF GetTrayTextColor()
 {
 	BYTE		themeValues[COLOR_TRAYTEXT_SIZE] = {0};
@@ -30,27 +29,31 @@ static COLORREF GetTrayTextColor()
 	
 	return color;
 }
-#endif //_WIN32_WCE >= 0x501
 
 static void DoCommandLine(LPTSTR lpCmdLine)
 {
-#if 0
-	int			argc = 0;
-	LPTSTR		*argv = NULL;
-	
+	int			nIndex1 = 0, nIndex2 = 0;
 	int			nR = 0, nG = 0, nB = 0;
 	BOOL		bColor = FALSE;
 	COLORREF	color = 0;
-	int i;
+	TCHAR		acArg[MAX_LOADSTRING] = {0};
 
-	if (argv = CommandLineToArgv(lpCmdLine, &argc)) {
-		for(i=0; i < argc; i++)
+	do
+	{
+		if(lpCmdLine[nIndex1] && !IsSpace(lpCmdLine[nIndex1]))
 		{
+			acArg[nIndex2++] = lpCmdLine[nIndex1];
+		}
+		else
+		{
+			acArg[nIndex2] = '\0';
+			nIndex2 = 0;
+
 			if(bColor)
 			{
-				if(argv[i][0] == ARG_COLOR_HEAD)
+				if(acArg[0] == ARG_COLOR_HEAD)
 				{
-					SScanF(argv[i], ARG_COLOR_FORMAT, &nR, &nG, &nB);
+					SScanF(acArg, ARG_COLOR_FORMAT, &nR, &nG, &nB);
 					SetClockColor(RGB(nR, nG, nB));
 					g_bColor = TRUE;
 				}
@@ -58,26 +61,23 @@ static void DoCommandLine(LPTSTR lpCmdLine)
 			}
 			else
 			{
-				if(!StrCmp(StrLwr(argv[i]), ARG_12H))
+				if(!StrCmp(StrLwr(acArg), ARG_12H))
 				{
 					g_b12H = TRUE;
 				}
 
-				if(!StrCmp(StrLwr(argv[i]), ARG_HIDE))
+				if(!StrCmp(StrLwr(acArg), ARG_HIDE))
 				{
 					g_bHide = TRUE;
 				}
 
-				if(!StrCmp(StrLwr(argv[i]), ARG_COLOR))
+				if(!StrCmp(StrLwr(acArg), ARG_COLOR))
 				{
 					bColor = TRUE;
 				}
 			}
 		}
-
-		LocalFree(argv);
-	}
-#endif
+	}while(lpCmdLine[nIndex1++]);
 }
 
 static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -110,7 +110,6 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 		}
 		break;
 
-#if _WIN32_WCE >= 0x501
 	case WM_SYSCOLORCHANGE:
 		if(!g_bColor)
 		{
@@ -118,7 +117,6 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 			UpdateClock(hwndDlg);
 		}
 		break;
-#endif //_WIN32_WCE >= 0x501
 
 	case WM_INITDIALOG:
 		sid.dwMask = SHIDIM_FLAGS;
@@ -145,11 +143,7 @@ static BOOL CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM l
 
 		if(!g_bColor)
 		{
-#if _WIN32_WCE >= 0x501
 			SetClockColor(GetTrayTextColor());
-#else //_WIN32_WCE >= 0x501
-			SetClockColor(DEFAULT_COLOR);
-#endif //_WIN32_WCE >= 0x501
 		}
 
 		CreateClock(hwndDlg);
