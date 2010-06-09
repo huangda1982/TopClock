@@ -74,7 +74,7 @@ STYLE DS_SHELLFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME
 CAPTION "小时钟"
 FONT 9, "Ms Shell Dlg"
 {
-    LTEXT           "小时钟 V%s\n  黄达制作\nhuangda1982@gmail.com", IDC_SIGN, 30, 5, 90, 24, SS_LEFT
+    LTEXT           "小时钟 V%s\n  黄达制作\nhuangda1982@gmail.com", IDC_VER, 30, 5, 90, 24, SS_LEFT
     LTEXT           "命令行参数：\n-hide\t不显示窗口。\n-12\t十二小时制显示。\n-color #XXXXXX\n\t指定颜色值。", IDC_INFO, 3, 33, 97, 43, SS_LEFT | SS_NOPREFIX
     LTEXT           "本软件\n     以GPL协议发布。", IDC_GPL, 3, 78, 72, 20, SS_LEFT | SS_NOPREFIX
     ICON            IDI_ICON, IDC_MYICON, 3, 5, 21, 20, SS_ICON | 0x00000800

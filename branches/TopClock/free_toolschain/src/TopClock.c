@@ -178,7 +178,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 {
 	MSG		msg;
 	HWND	hWnd;
-	TCHAR	szTitle[MAX_LOADSTRING];
+	TCHAR	string[MAX_LOADSTRING];
+	TCHAR	strVer[MAX_LOADSTRING];
+
+	HWND	hVer;
 
 	g_hInst = hInstance;
 
@@ -187,8 +190,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 
 	SHInitExtraControls();
 
-	LoadString(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING); 
-	hWnd = FindWindow(DIALOG_CLASS, szTitle);	
+	LoadString(hInstance, IDS_APP_TITLE, string, MAX_LOADSTRING); 
+	hWnd = FindWindow(DIALOG_CLASS, string);	
 	if(hWnd) 
 	{
 		ShowWindow(hWnd, SW_SHOW);
@@ -204,8 +207,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 		return FALSE;
 	}
 
-	SetWindowText(hWnd, szTitle);
-	ShowWindow(hWnd, nCmdShow);
+	SetWindowText(hWnd, string);
+	//ShowWindow(hWnd, nCmdShow);
+
+	GetDlgItemText(hWnd, IDC_VER, string, MAX_LOADSTRING);
+	SPrintF(strVer, string, VER);
+	SetDlgItemText(hWnd, IDC_VER, strVer);
 
 	if(!g_bHide)
 	{
